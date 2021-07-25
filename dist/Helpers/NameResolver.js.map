@@ -1,1 +1,1 @@
-{"version":3,"file":"NameResolver.js","sourceRoot":"","sources":["../../src/Helpers/NameResolver.ts"],"names":[],"mappings":";;AAAA,MAAM,YAAY,GAAG,CAAC,MAAc,EAAU,EAAE;IAC5C,OAAO,MAAM,CAAA;AACjB,CAAC,CAAA;AAED,kBAAe,YAAY,CAAA"}
+{"version":3,"file":"NameResolver.js","sourceRoot":"","sources":["../../src/Helpers/NameResolver.ts"],"names":[],"mappings":";;AAAA,iDAAgD;AAEhD,MAAM,YAAY,GAAG,CAAC,MAAc,EAAU,EAAE;IAC5C,MAAM,IAAI,GAAG,MAAM,CAAC,WAAW,EAAE,CAAC,OAAO,CAAC,GAAG,EAAE,GAAG,CAAC,CAAA;IACnD,OAAO,sBAAW,CAAC,GAAG,IAAI,EAAE,CAAC,CAAA;AACjC,CAAC,CAAA;AAED,kBAAe,YAAY,CAAA"}

@@ -8,11 +8,15 @@ import GetIntent from '../Middleware/GetIntent'
 import Greeting from '../Middleware/Resolvers/Greeting'
 import Lights from '../Middleware/Resolvers/Lights'
 import OpenSite from '../Middleware/Resolvers/OpenSIte'
+import OpenApps from '../Middleware/Resolvers/OpenApp'
+import CloseApps from '../Middleware/Resolvers/CloseApp'
 
 router.post('/', [
     GetIntent,
     Greeting,
     OpenSite,
+    OpenApps,
+    CloseApps,
     Lights
 ], (req: Request, res: Response) => {
     const twiml = new twilio.twiml.MessagingResponse()

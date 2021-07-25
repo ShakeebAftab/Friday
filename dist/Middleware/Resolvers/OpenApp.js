@@ -8,6 +8,7 @@ const NameResolver_1 = __importDefault(require("../../Helpers/NameResolver"));
 const OpenApps = (req, _, next) => {
     if (req.body.intent === 'OPENAPPS') {
         const resolvedName = NameResolver_1.default(req.body.target);
+        console.log(resolvedName);
         child_process_1.exec(`start ${resolvedName}`, (err) => {
             if (err)
                 throw err;

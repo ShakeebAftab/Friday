@@ -1,5 +1,8 @@
+import { WinAppNames } from "../Consts/AppNames"
+
 const NameResolver = (target: string): string => {
-    return target
+    const name = target.toLowerCase().replace(' ', '-')
+    return WinAppNames[`${name}`]
 }
 
 export default NameResolver
