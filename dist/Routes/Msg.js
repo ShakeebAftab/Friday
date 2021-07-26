@@ -12,14 +12,18 @@ const Lights_1 = __importDefault(require("../Middleware/Resolvers/Lights"));
 const OpenSIte_1 = __importDefault(require("../Middleware/Resolvers/OpenSIte"));
 const OpenApp_1 = __importDefault(require("../Middleware/Resolvers/OpenApp"));
 const CloseApp_1 = __importDefault(require("../Middleware/Resolvers/CloseApp"));
-const Media_1 = __importDefault(require("../Middleware/Resolvers/Media"));
+const Volume_1 = __importDefault(require("../Middleware/Resolvers/Volume"));
+const Chrome_1 = __importDefault(require("../Middleware/Resolvers/Chrome"));
+const MediaControls_1 = __importDefault(require("../Middleware/Resolvers/MediaControls"));
 router.post('/', [
     GetIntent_1.default,
     Greeting_1.default,
     OpenSIte_1.default,
     OpenApp_1.default,
     CloseApp_1.default,
-    Media_1.default,
+    Volume_1.default,
+    Chrome_1.default,
+    MediaControls_1.default,
     Lights_1.default
 ], (req, res) => {
     const twiml = new twilio_1.default.twiml.MessagingResponse();

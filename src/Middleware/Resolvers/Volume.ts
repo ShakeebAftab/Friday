@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from "express";
 import Speaker from "../../Helpers/Speaker";
 
-const Media = (req: Request, _: Response, next: NextFunction) => {
+const Volume = (req: Request, _: Response, next: NextFunction) => {
     if (req.body.intent.includes('VOLUME')) {
         switch (req.body.intent) {
             case 'VOLUME_SET':
@@ -16,6 +16,10 @@ const Media = (req: Request, _: Response, next: NextFunction) => {
                 Speaker.decrease(parseInt(req.body.target)> 0 ? parseInt(req.body.target) : 2)
                 req.body.res = `Volume level changed to: ${Speaker.get()}`
                 break
+            case `VOLUME_TOGGLE`:
+                Speaker.toggle()
+                req.body.res = `Speaker ${Speaker.isMuted() ? `muted` : `unmuted`}, Sir!`
+                break
             default:
                 req.body.res = `Sorry Sir, I was not able to change the volume`
                 break;
@@ -24,4 +28,4 @@ const Media = (req: Request, _: Response, next: NextFunction) => {
     next()
 }
 
-export default Media
+export default Volume

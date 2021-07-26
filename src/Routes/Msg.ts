@@ -10,7 +10,9 @@ import Lights from '../Middleware/Resolvers/Lights'
 import OpenSite from '../Middleware/Resolvers/OpenSIte'
 import OpenApps from '../Middleware/Resolvers/OpenApp'
 import CloseApps from '../Middleware/Resolvers/CloseApp'
-import Media from '../Middleware/Resolvers/Media'
+import Volume from '../Middleware/Resolvers/Volume'
+import Chrome from '../Middleware/Resolvers/Chrome'
+import MediaControls from '../Middleware/Resolvers/MediaControls'
 
 router.post('/', [
     GetIntent,
@@ -18,7 +20,9 @@ router.post('/', [
     OpenSite,
     OpenApps,
     CloseApps,
-    Media,
+    Volume,
+    Chrome,
+    MediaControls,
     Lights
 ], (req: Request, res: Response) => {
     const twiml = new twilio.twiml.MessagingResponse()
