@@ -15,6 +15,7 @@ const CloseApp_1 = __importDefault(require("../Middleware/Resolvers/CloseApp"));
 const Volume_1 = __importDefault(require("../Middleware/Resolvers/Volume"));
 const Chrome_1 = __importDefault(require("../Middleware/Resolvers/Chrome"));
 const MediaControls_1 = __importDefault(require("../Middleware/Resolvers/MediaControls"));
+const Files_1 = __importDefault(require("../Middleware/Resolvers/Files"));
 router.post('/', [
     GetIntent_1.default,
     Greeting_1.default,
@@ -24,10 +25,12 @@ router.post('/', [
     Volume_1.default,
     Chrome_1.default,
     MediaControls_1.default,
+    Files_1.default,
     Lights_1.default
 ], (req, res) => {
+    console.log(req);
     const twiml = new twilio_1.default.twiml.MessagingResponse();
-    twiml.message(req.body.res);
+    twiml.message(req.body.res !== `` ? req.body.res : `Sorry Sir, I was not able to process your request`);
     res.writeHead(200, { 'Content-Type': 'text/xml' });
     res.end(twiml.toString());
 });

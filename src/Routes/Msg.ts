@@ -13,6 +13,7 @@ import CloseApps from '../Middleware/Resolvers/CloseApp'
 import Volume from '../Middleware/Resolvers/Volume'
 import Chrome from '../Middleware/Resolvers/Chrome'
 import MediaControls from '../Middleware/Resolvers/MediaControls'
+import Files from '../Middleware/Resolvers/Files'
 
 router.post('/', [
     GetIntent,
@@ -23,10 +24,12 @@ router.post('/', [
     Volume,
     Chrome,
     MediaControls,
+    Files,
     Lights
 ], (req: Request, res: Response) => {
+    console.log(req)
     const twiml = new twilio.twiml.MessagingResponse()
-    twiml.message(req.body.res)
+    twiml.message(req.body.res !== `` ? req.body.res : `Sorry Sir, I was not able to process your request`)
     res.writeHead(200, {'Content-Type': 'text/xml'})
     res.end(twiml.toString())
 })

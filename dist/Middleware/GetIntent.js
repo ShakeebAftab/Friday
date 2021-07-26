@@ -14,7 +14,7 @@ const GetIntent = (req, _, next) => __awaiter(void 0, void 0, void 0, function* 
     console.log(req.body.Body);
     const result = yield Wit_1.WitClient.message(req.body.Body, {});
     console.log(result);
-    req.body.intent = result === null || result === void 0 ? void 0 : result.intents[0].name;
+    req.body.intent = (result === null || result === void 0 ? void 0 : result.intents[0]) !== undefined ? result.intents[0].name : ``;
     req.body.target = result.entities['TARGET:TARGET'] ? result.entities['TARGET:TARGET'][0].value : undefined;
     next();
 });

@@ -14,7 +14,7 @@ export const WinAppNames: any = {
     'security': 'windowsdefender:',
     'chrome': 'chrome',
     'vs-code': 'code'
-}
+} 
 
 export const ExitWinAppNames: any = {
     'clock': 'time.exe',
