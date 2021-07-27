@@ -1,7 +1,7 @@
 # Laptop Automation with a touch of home automation
 
 ### Inspiration
-Too lazy to get up and use laptop by hands hence needed to come up with an elegent solution which was easily accessable and I was spending most of my time on whatsapp anyways it made sense to use it as a goto solution
+Too lazy to get up and use my laptop by hand. Hence needed to come up with an elegant solution that was easily accessible, and I was spending most of my time on WhatsApp anyways so it made sense to use it as a go-to solution.
 
 ### Functionality
 * **Greetings**
@@ -9,6 +9,7 @@ Too lazy to get up and use laptop by hands hence needed to come up with an elege
 * **Close apps**
 * **Control volume**
 * **Control lights through arduino**
+* **Hibernate and Lock Computer**
 
 ### Future Plans
 * **Access media folders so media can be directly played**
