@@ -9,7 +9,7 @@ const router = express_1.Router();
 const GetIntent_1 = __importDefault(require("../Middleware/GetIntent"));
 const Greeting_1 = __importDefault(require("../Middleware/Resolvers/Greeting"));
 const Lights_1 = __importDefault(require("../Middleware/Resolvers/Lights"));
-const OpenSIte_1 = __importDefault(require("../Middleware/Resolvers/OpenSIte"));
+const OpenSite_1 = __importDefault(require("../Middleware/Resolvers/OpenSite"));
 const OpenApp_1 = __importDefault(require("../Middleware/Resolvers/OpenApp"));
 const CloseApp_1 = __importDefault(require("../Middleware/Resolvers/CloseApp"));
 const Volume_1 = __importDefault(require("../Middleware/Resolvers/Volume"));
@@ -20,7 +20,7 @@ const Laptop_1 = __importDefault(require("../Middleware/Resolvers/Laptop"));
 router.post('/', [
     GetIntent_1.default,
     Greeting_1.default,
-    OpenSIte_1.default,
+    OpenSite_1.default,
     OpenApp_1.default,
     CloseApp_1.default,
     Volume_1.default,

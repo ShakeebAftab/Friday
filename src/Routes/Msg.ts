@@ -7,7 +7,7 @@ const router = Router()
 import GetIntent from '../Middleware/GetIntent'
 import Greeting from '../Middleware/Resolvers/Greeting'
 import Lights from '../Middleware/Resolvers/Lights'
-import OpenSite from '../Middleware/Resolvers/OpenSIte'
+import OpenSite from '../Middleware/Resolvers/OpenSite'
 import OpenApps from '../Middleware/Resolvers/OpenApp'
 import CloseApps from '../Middleware/Resolvers/CloseApp'
 import Volume from '../Middleware/Resolvers/Volume'
