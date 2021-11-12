@@ -14,7 +14,8 @@ Too lazy to get up and use my laptop by hand. Hence needed to come up with an el
 
 ## Tech Stack
 
-**Server:** Node JS, Express JS, Redis, Wit.ai
+**APIs:** Wit.ai, Twilio
+**Server:** Node JS, Express JS, Redis
 
 ### Future Plans
 * **Access media folders so media can be directly played**
