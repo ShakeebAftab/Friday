@@ -1,4 +1,5 @@
-# Laptop Automation with a touch of home automation
+# Friday
+Laptop Automation with a touch of home automation
 
 ## Inspiration
 Too lazy to get up and use my laptop by hand. Hence needed to come up with an elegant solution that was easily accessible, and I was spending most of my time on WhatsApp anyways so it made sense to use it as a go-to solution.
