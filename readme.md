@@ -1,9 +1,9 @@
 # Laptop Automation with a touch of home automation
 
-### Inspiration
+## Inspiration
 Too lazy to get up and use my laptop by hand. Hence needed to come up with an elegant solution that was easily accessible, and I was spending most of my time on WhatsApp anyways so it made sense to use it as a go-to solution.
 
-### Functionality
+## Functionality
 * **Greetings**
 * **Open apps and sites**
 * **Close apps**
@@ -11,8 +11,11 @@ Too lazy to get up and use my laptop by hand. Hence needed to come up with an el
 * **Control lights through arduino**
 * **Hibernate and Lock Computer**
 
+## Tech Stack
+
+**Server:** Node JS, Express JS, Redis, Wit.ai
+
 ### Future Plans
 * **Access media folders so media can be directly played**
-* **Google query bot**
 * **Some other laptop commands**
-* **Any other thing i can think of**
+* **Any other thing I can think of**
